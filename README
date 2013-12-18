@@ -1,0 +1,9 @@
+1. Installation
+	Introduction
+		Pour installer TetrisStats, il faut tout d'abord mettre en place une base de données MySQL. Celle-ci doit supporter le moteur InnoDB.
+		Le fichier qui se trouve dans "sql/tetrisstats.sql" contient les commandes SQL permmetant de générer automatiquement la structure SQL.
+	
+	Etapes :
+		Importez ce fichier (tetrisstats.sql) dans une base de donnée vide
+		Ouvrez "core/database.php" dans un éditeur de texte
+		Editez les variables correctement aux lignes 10 à 13.
