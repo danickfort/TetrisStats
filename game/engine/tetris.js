@@ -523,6 +523,7 @@ function freeze() {
 }
 
 function newGame() {
+	clearInterval(intervalRender);
 	intervalRender = setInterval(render, 30);
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
