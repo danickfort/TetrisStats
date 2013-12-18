@@ -5,6 +5,7 @@ var currentX = 0,
     currentY = 0;
 var lose = false; // Boolean : true when game is lost
 var intervalTick; // Interval : each 250ms
+var intervalRender;
 var dropping = false; // Check if piece is being dropped, to disable other keys
 var currentTetromino = undefined;
 var currentRotation = 0;
@@ -522,7 +523,7 @@ function freeze() {
 }
 
 function newGame() {
-	setInterval(render, 30);
+	intervalRender = setInterval(render, 30);
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
 	totalCount = 0;
@@ -571,8 +572,8 @@ function startScreen() {
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
 	
 	var sources = {
-		ps : '../php/game/engine/ps.jpg',
-		bg : '../php/game/engine/bg.jpg'
+		ps : '../game/engine/ps.jpg',
+		bg : '../game/engine/bg.jpg'
 	}
 	loadImages(sources, function(images) {
 		ctx.drawImage(images.bg, 0,0);
