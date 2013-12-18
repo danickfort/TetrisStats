@@ -10,7 +10,7 @@ class DatabaseManager {
 	private $databaseName = 'tetrisstats';			// DATABASE NAME
 	private $databaseHost = 'localhost';	// MYSQL HOST
 	private $databaseUsername = 'root';		// MYSQL USERNAME
-	private $databasePassword = 'vz155';	// MYSQL PASSWORD
+	private $databasePassword = 'from4ge';	// MYSQL PASSWORD
 	
 	private $databaseConnection;
 	

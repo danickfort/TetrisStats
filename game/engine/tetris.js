@@ -572,8 +572,8 @@ function startScreen() {
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
 	
 	var sources = {
-		ps : '../game/engine/ps.jpg',
-		bg : '../game/engine/bg.jpg'
+		ps : './game/engine/ps.jpg',
+		bg : './game/engine/bg.jpg'
 	}
 	loadImages(sources, function(images) {
 		ctx.drawImage(images.bg, 0,0);
